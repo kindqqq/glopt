@@ -85,5 +85,6 @@
         "*.js": [
             "eslint --fix --color"
         ]
-    }
+    },
+    "packageManager": "yarn@3.1.0"
 }
