@@ -1,5 +1,5 @@
 .benefits {
-    min-height: 590px;
+    min-height: rem(590);
     background-color: #f3f3f3;
     padding: em(58) em(20) em(51) em(20);
     &__title {
@@ -7,14 +7,14 @@
     &__grid-container {
         display: grid;
         justify-content: space-between;
-        grid-template: repeat(4, minmax(62px, auto)) / repeat(2, 523px);
-        grid-auto-rows: minmax(62px, auto);
-        row-gap: 36px;
+        grid-template: repeat(4, minmax(rem(62), auto)) / repeat(2, rem(523));
+        grid-auto-rows: minmax(rem(62), auto);
+        row-gap: rem(36);
     }
     &__grid-item {
         display: grid;
-        grid-template: 20px auto / 62px 443px;
-        column-gap: 17px;
+        grid-template: rem(20) auto / rem(62) rem(443);
+        column-gap: rem(17);
     }
     &__grid-item1 {
     }
