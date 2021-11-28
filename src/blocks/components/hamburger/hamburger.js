@@ -1,4 +1,3 @@
-import $ from "jquery";
 window.addEventListener("DOMContentLoaded", () => {
   const menu = document.querySelector(".menu"),
     menuItem = document.querySelectorAll(".menu__item"),
@@ -16,15 +15,13 @@ window.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  
-  $("ul.menu").on(
-    "click",
-    "li:not(.menu__item__active)",
-    function () {
-      $(this)
-        .addClass("menu__item__active")
-        .siblings()
-        .removeClass("menu__item__active");
-    }
-  );
+  $(function () {
+    $(".menu a").each(function () {
+      var location = window.location.href;
+      var link = this.href;
+      if (location == link) {
+        $(this).addClass("menu__item__active");
+      }
+    });
+  });
 });

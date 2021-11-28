@@ -3,8 +3,8 @@
     .hamburger {
       display: block;
       position: fixed;
-      left: 46px;
-      top: 63px;
+      left: 25px;
+      top: 25px;
       width: 30px;
       height: 21px;
       z-index: 1;
@@ -34,11 +34,6 @@
     }
     .container {
       .nav {
-        .logo{
-          img{
-            margin-right: 0;
-          }
-        }
         .menu {
           z-index: 100;
           position: fixed;
