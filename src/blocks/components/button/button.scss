@@ -1,0 +1,18 @@
+.btn {
+    margin-left: rem(17);
+    width: rem(160);
+    height: rem(40);
+    border: rem(1) solid $main-color;
+    border-radius: rem(30);
+    font-size: rem(12);
+    line-height: 1.83;
+    text-align: center;
+    color: #fff;
+    background-color: $main-color;
+    text-transform: uppercase;
+    transition: 0.4s;
+    &:hover {
+        cursor: pointer;
+        background-color: rgba(236, 100, 75, 0);
+    }
+}
