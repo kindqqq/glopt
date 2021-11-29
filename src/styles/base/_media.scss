@@ -69,6 +69,13 @@
           }
         }
       }
+      .logo {
+        img {
+          margin-right: 0;
+          width: rem(95);
+          height: rem(99);
+        }
+      }
     }
   }
 }

@@ -15,13 +15,14 @@ window.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  $(function () {
-    $(".menu a").each(function () {
-      var location = window.location.href;
-      var link = this.href;
-      if (location == link) {
-        $(this).addClass("menu__item__active");
-      }
-    });
-  });
+  $(".menu").on(
+    "click",
+    "li:not(.menu__item__active)",
+    function () {
+      $(this)
+        .addClass("menu__item__active")
+        .siblings()
+        .removeClass("menu__item__active");
+    }
+  );
 });

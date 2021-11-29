@@ -1,13 +1,11 @@
-modules.define('promo', ['i-bem-dom'], function(provide, bemDom) {
-
-provide(bemDom.declBlock(this.name, {
-    onSetMod: {
+modules.define("promo", ["i-bem-dom"], function (provide, bemDom) {
+  provide(
+    bemDom.declBlock(this.name, {
+      onSetMod: {
         js: {
-            inited: function() {
-                
-            }
-        }
-    }
-}));
-
+          inited: function () {},
+        },
+      },
+    })
+  );
 });
