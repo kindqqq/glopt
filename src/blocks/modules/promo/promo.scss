@@ -170,11 +170,13 @@
     }
   }
   &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: rem(230);
     height: rem(57);
     margin: em(50) auto 0;
     border: 1px solid $main-color;
-    padding: em(20) em(29);
     transition: 0.4s;
     text-align: center;
     border-radius: rem(30);

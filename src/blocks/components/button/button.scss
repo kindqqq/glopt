@@ -1,5 +1,7 @@
 .btn {
-    margin-left: rem(17);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: rem(160);
     height: rem(40);
     border: rem(1) solid $main-color;

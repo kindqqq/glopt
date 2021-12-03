@@ -1,0 +1,78 @@
+.consultation {
+  min-height: rem(400);
+  padding: em(56) 0;
+  &__title.title {
+    font-size: rem(28);
+    font-weight: 400;
+    margin-bottom: em(0);
+  }
+  &__img {
+    position: relative;
+    margin-top: em(10);
+    width: rem(124);
+    height: rem(124);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    background-color: $white-color;
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -47%);
+      content: "";
+      width: rem(102);
+      height: rem(102);
+      border: 1px solid $main-color;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    img {
+      width: rem(59);
+      height: rem(61);
+    }
+  }
+  &__inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: em(68);
+  }
+  &__btn {
+    &:hover {
+      color: $main-color;
+    }
+  }
+}
+.feed-form {
+  height: rem(166);
+  border: 1px solid #c4c4c4;
+  position: relative;
+  top: -60px;
+  input {
+    font-size: rem(13);
+    margin: 0 em(2);
+    width: 268px;
+    height: 45px;
+    border: solid 1px $silver-color;
+    border-radius: rem(30);
+    background-color: $white-color;
+    padding-left: em(28);
+    outline: none;
+    &:focus {
+      border: solid 1px $main-color;
+    }
+  }
+}
+.btn {
+  &__submit {
+    background-color: $white-color;
+    width: rem(180);
+    margin-top: em(32);
+    display: flex;
+    justify-content: center;
+  }
+}
