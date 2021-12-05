@@ -38,8 +38,8 @@
   &__inputs {
     display: flex;
     justify-content: center;
-    align-items: center;
     margin-top: em(68);
+    
   }
   &__btn {
     &:hover {
@@ -48,11 +48,13 @@
   }
 }
 .feed-form {
-  height: rem(166);
+  min-height: rem(166);
   border: 1px solid #c4c4c4;
   position: relative;
   top: -60px;
   input {
+    display: block;
+    position: relative;
     font-size: rem(13);
     margin: 0 em(2);
     width: 268px;
@@ -62,8 +64,36 @@
     background-color: $white-color;
     padding-left: em(28);
     outline: none;
+    margin-bottom: 10px;
     &:focus {
       border: solid 1px $main-color;
+
+    }
+    &.error {
+      border: 1px solid red;
+    }
+    &.valid {
+
+    }
+  }
+  label {
+    &.error {
+      display: block;
+      color: $main-color;
+      border: none;
+      text-align: center;
+      margin-bottom: 10px;
+      font-weight: 700;
+      font-size: rem(14);
+    }
+    &#name-error {
+      width: rem(200);
+    }
+    &#phone-error {
+      width: rem(200);
+    }
+    &#email-error {
+      width: rem(200);
     }
   }
 }
@@ -71,8 +101,11 @@
   &__submit {
     background-color: $white-color;
     width: rem(180);
-    margin-top: em(32);
     display: flex;
     justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: em(-21);
   }
 }
