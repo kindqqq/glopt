@@ -39,7 +39,6 @@
     display: flex;
     justify-content: center;
     margin-top: em(68);
-    
   }
   &__btn {
     &:hover {
@@ -48,10 +47,11 @@
   }
 }
 .feed-form {
-  min-height: rem(166);
+  min-height: rem(160);
   border: 1px solid #c4c4c4;
   position: relative;
   top: -60px;
+  display: flex;
   input {
     display: block;
     position: relative;
@@ -67,13 +67,11 @@
     margin-bottom: 10px;
     &:focus {
       border: solid 1px $main-color;
-
     }
     &.error {
       border: 1px solid red;
     }
     &.valid {
-
     }
   }
   label {
@@ -91,6 +89,7 @@
     }
     &#phone-error {
       width: rem(200);
+      margin-bottom: em(30);
     }
     &#email-error {
       width: rem(200);
