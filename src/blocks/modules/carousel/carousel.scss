@@ -1,0 +1,125 @@
+.carousel {
+  position: relative;
+  min-height: 470px;
+  padding: 0 0 em(65);
+  margin-top: em(51);
+  .owl-stage-outer {
+    overflow: visible;
+  }
+  .owl-prev {
+    position: absolute;
+    top: 148px;
+    left: 43%;
+    border: none;
+    background-color: initial;
+    z-index: 100;
+  }
+  .owl-next {
+    position: absolute;
+    top: 148px;
+    right: 43.2%;
+    border: none;
+    background-color: initial;
+    z-index: 100;
+  }
+  &__title {
+    font-size: rem(26);
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+  &__subtitle {
+    margin-top: em(25);
+    font-size: 21px;
+    font-weight: 300;
+    text-align: center;
+  }
+}
+
+.item {
+  opacity: 0.4;
+  transition: 0.4s ease all;
+  transform: scale(0.6);
+}
+.active {
+  .item {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.owl-item {
+  -webkit-backface-visibility: visible;
+  -webkit-transform: translateZ(0) scale(1, 1);
+}
+.owl-item.active {
+  width: 300px;
+}
+.inner {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    transition: 0.3s ease border-color;
+    &:hover {
+      border-color: #fff;
+    }
+  }
+}
+.black {
+  .inner {
+    a {
+      color: #000;
+      border-color: rgba(0, 0, 0, 0.4);
+      &:hover {
+        border-color: #000;
+      }
+    }
+  }
+}
+.owl-carousel {
+  margin-top: em(31);
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 8%;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -4%;
+    pointer-events: none;
+    background-size: 100% auto;
+  }
+}
+.owl-carousel .owl-item img {
+  width: rem(114);
+  height: rem(114);
+}
+.owl-controls {
+  position: absolute;
+  margin-top: 300px;
+}
+.owl-title {
+  margin-top: em(12);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+.owl-descr {
+  margin-top: em(10);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.57;
+  text-align: justify;
+  color: #3a3a3a;
+  p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.57;
+    text-align: center;
+  }
+}
