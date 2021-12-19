@@ -4,7 +4,7 @@
   padding: 0 0 em(65);
   margin-top: em(51);
   .owl-stage-outer {
-    overflow: visible;
+    overflow: hidden;
   }
   .owl-prev {
     position: absolute;
@@ -39,8 +39,15 @@
   opacity: 0.4;
   transition: 0.4s ease all;
   transform: scale(0.6);
+  
 }
 .active {
+  .item {
+    opacity: 0.4;
+    transform: scale(0.6);
+  }
+}
+.active.center {
   .item {
     opacity: 1;
     transform: scale(1);

@@ -40,33 +40,38 @@ $("document").ready(function () {
 
   $(".owl-carousel").owlCarousel({
     // stagePadding: 330,
+    // loop: true,
+    // margin: 0,
+    // items: 1,
+    // lazyLoad: true,
+    center: true,
+    items: 2.2,
     loop: true,
-    margin: 0,
-    items: 1,
+    margin: 10,
     lazyLoad: true,
-    responsive: {
-      0: {
-        stagePadding: 60,
-      },
-      600: {
-        stagePadding: 100,
-      },
-      1000: {
-        stagePadding: 200,
-      },
-      1200: {
-        stagePadding: 250,
-      },
-      1400: {
-        stagePadding: 250,
-      },
-      1600: {
-        stagePadding: 250,
-      },
-      1800: {
-        stagePadding: 250,
-      },
-    },
+    // responsive: {
+    //   0: {
+    //     stagePadding: 60,
+    //   },
+    //   600: {
+    //     stagePadding: 100,
+    //   },
+    //   1000: {
+    //     stagePadding: 200,
+    //   },
+    //   1200: {
+    //     stagePadding: 250,
+    //   },
+    //   1400: {
+    //     stagePadding: 250,
+    //   },
+    //   1600: {
+    //     stagePadding: 250,
+    //   },
+    //   1800: {
+    //     stagePadding: 250,
+    //   },
+    // },
   });
 
   var owl = $(".owl-carousel");
