@@ -35,8 +35,9 @@ $("document").ready(function () {
     });
   }
   validForm("#validForm");
+  validForm("#validForms");
   // Phone mask
-  $("#phone").mask("+7(999)999-99-99");
+  $("[name='phone']").mask("+7(999)999-99-99");
 
   $(".owl-carousel").owlCarousel({
     // stagePadding: 330,

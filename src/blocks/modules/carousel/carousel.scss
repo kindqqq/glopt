@@ -1,7 +1,7 @@
 .carousel {
   position: relative;
-  min-height: 470px;
-  padding: 0 0 em(65);
+  min-height: 433px;
+  padding: 0 0 em(10);
   margin-top: em(51);
   .owl-stage-outer {
     overflow: hidden;
@@ -12,7 +12,7 @@
     left: 43%;
     border: none;
     background-color: initial;
-    z-index: 100;
+    z-index: 2;
   }
   .owl-next {
     position: absolute;
@@ -20,7 +20,7 @@
     right: 43.2%;
     border: none;
     background-color: initial;
-    z-index: 100;
+    z-index: 2;
   }
   &__title {
     font-size: rem(26);
@@ -47,7 +47,7 @@
     transform: scale(0.6);
   }
 }
-.active.center {
+.owl-item.active.center {
   .item {
     opacity: 1;
     transform: scale(1);
@@ -60,6 +60,7 @@
 .owl-item.active {
   width: 300px;
 }
+
 .inner {
   position: absolute;
   bottom: 30px;
@@ -105,6 +106,7 @@
 .owl-carousel .owl-item img {
   width: rem(114);
   height: rem(114);
+  z-index: 2;
 }
 .owl-controls {
   position: absolute;
